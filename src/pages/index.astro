@@ -1,6 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import "../styles/global.css";
+import zap from "../assets/icons/zap.svg";
+import inbox from "../assets/icons/inbox.svg";
+import grid from "../assets/icons/grid.svg";
+import arrowRight from "../assets/icons/arrow-right.svg";
 ---
 
 <Layout>
@@ -34,7 +38,7 @@ import "../styles/global.css";
 					<div class="flex flex-col sm:flex-row gap-4 pt-4">
 						<a
 							href="/"
-							class="px-6 py-3 border-2 border-black bg-[#FDE3FF] font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all text-center"
+							class="px-6 py-3 border-2 border-black bg-[#FFD700] font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all text-center"
 						>
 							Get Started
 						</a>
@@ -68,6 +72,40 @@ import "../styles/global.css";
 					</div>
 					<div class="absolute -bottom-4 right-10 bg-[#FF6B6B] border-2 border-black p-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] -rotate-3">
 						<div class="font-bold">Drag & Drop</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Features Section -->
+		<section id="features" class="bg-[#F7FFF7] py-16 border-y-2 border-black">
+			<div class="container mx-auto px-4">
+				<div class="text-center mb-12">
+					<h2 class="text-3xl md:text-4xl font-bold inline-block bg-white px-4 py-2 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rotate-1">
+						Powerful Features
+					</h2>
+				</div>
+				<div class="grid md:grid-cols-3 gap-8">
+					<div class="bg-white p-6 border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] rotate-1">
+						<div class="bg-[#FFD700] inline-block p-2 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] -rotate-3 mb-4">
+							<img src={inbox.src} class="w-6 h-6" />
+						</div>
+						<h3 class="text-xl font-bold mb-2">Inbox</h3>
+						<p>Create, edit and delete tasks.</p>
+					</div>
+					<div class="bg-white p-6 border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] -rotate-1">
+						<div class="bg-[#4ECDC4] inline-block p-2 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rotate-3 mb-4">
+							<img src={zap.src} class="w-6 h-6" />
+						</div>
+						<h3 class="text-xl font-bold mb-2">Prioritize</h3>
+						<p>Prioritize tasks based on urgency and importance to focus on what truly matters.</p>
+					</div>
+					<div class="bg-white p-6 border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] rotate-2">
+						<div class="bg-[#FF6B6B] inline-block p-2 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] -rotate-3 mb-4">
+							<img src={arrowRight.src} class="w-6 h-6" />
+						</div>
+						<h3 class="text-xl font-bold mb-2">Drag animations</h3>
+						<p>Enjoy satisfying drag-and-drop animations that make organizing your tasks a delightful experience.</p>
 					</div>
 				</div>
 			</div>
