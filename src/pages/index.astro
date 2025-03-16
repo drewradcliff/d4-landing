@@ -4,5 +4,73 @@ import "../styles/global.css";
 ---
 
 <Layout>
-	<h1 class="text-3xl font-bold">Hello World</h1>
+	<div class="min-h-screen font-mono">
+		<!-- Header -->
+		 <header class="container mx-auto py-6 px-4">
+			<div class="flex justify-between items-center">
+				<div class="flex items-center gap-2">
+					<div class="bg-black text-white font-bold text-xl p-2 rotate-1 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+						QUADZILLA	
+					</div>
+				</div>
+				<nav class="hidden md:flex gap-6">
+					<a href="#features" class="font-medium hover:underline underline-offset-4">Features</a>
+					<a href="#how-it-works" class="font-medium hover:underline underline-offset-4">How it works</a>
+					<a href="#contact" class="font-medium hover:underline underline-offset-4">Contact</a>
+				</nav>
+			</div>
+		 </header>
+		 
+		 <!-- Hero Section -->
+		<section class="container mx-auto py-12 px-4 md:py-24">
+			<div class="grid md:grid-cols-2 gap-12 items-center">
+				<div class="space-y-6">
+					<h1 class="text-4xl md:text-6xl font-bold leading-tight">
+						Prioritize Tasks Like Eisenhower
+					</h1>
+					<p class="text-xl">
+						Stop drowning in to-dos. Start focusing on what truly matters with the proven Eisenhower Matrix method.
+					</p>
+					<div class="flex flex-col sm:flex-row gap-4 pt-4">
+						<a
+							href="/"
+							class="px-6 py-3 border-2 border-black bg-[#FDE3FF] font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all text-center"
+						>
+							Get Started
+						</a>
+						<a
+							href="#how-it-works"
+							class="px-6 py-3 border-2 border-black bg-white font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all text-center"
+						>
+							See How It Works
+						</a>
+					</div>
+				</div>
+				<div class="relative flex justify-center">
+					<div class="flex-1 max-w-96">
+						<div class="border-2 border-black p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] rotate-1">
+							<div class="text-xl font-bold mb-4">Prioritize</div>
+						<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white border-2 border-black px-5 pt-5 pb-16 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] z-10">
+							<div class="font-bold">Write a blog <br/> post</div>
+						</div>
+						<div class="grid grid-cols-2 p-4">
+							<div class="relative border-r border-b border-dashed h-32 text-center">
+								<div class="text-sm absolute transform -rotate-90 -left-15 top-10 text-[#B8B8B8]">Important</div>
+								<div class="text-sm text-[#B8B8B8] absolute left-10 -top-5">Urgent</div>
+							</div>
+							<div class="border-b border-dashed h-32 text-center relative">
+								<div class="text-sm text-[#B8B8B8] absolute left-10 -top-5">Not Urgent</div>
+							</div>
+							<div class="relative border-r border-dashed h-32 text-center">
+								<div class="text-sm absolute top-15 -left-19 text-[#B8B8B8] transform -rotate-90">Not Important</div>
+							</div>
+						</div>
+					</div>
+					<div class="absolute -bottom-4 right-10 bg-[#FF6B6B] border-2 border-black p-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] -rotate-3">
+						<div class="font-bold">Drag & Drop</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
 </Layout>
